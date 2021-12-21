@@ -1,0 +1,27 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Undefined variable\\: \\$notDefined$#"
+			count: 1
+			path: src/level_0.php
+
+		-
+			message: "#^Variable \\$start might not be defined\\.$#"
+			count: 1
+			path: src/level_1.php
+
+		-
+			message: "#^PHPDoc tag @param for parameter \\$prefix with type string is incompatible with native type int\\.$#"
+			count: 1
+			path: src/level_2.php
+
+		-
+			message: "#^Method Demo\\:\\:getMessage\\(\\) should return string but returns int\\.$#"
+			count: 1
+			path: src/level_3.php
+
+		-
+			message: "#^Negated boolean expression is always false\\.$#"
+			count: 1
+			path: src/level_4.php
+
